@@ -22,7 +22,7 @@ void RandomGen::Getrandom(vector<int>& rvector, int inputhossz)
     //Randomszámok generálása vectorba
     srand(seed);
     rvector.clear();
-    for (int i = 0; i < inputhossz * 4 * 4; i++) //Extra *4  a végén, hogy elkerüljük az önndekódolást (új random értékek mind a 4 iterációra)
+    for (int i = 0; i < inputhossz * 4 * 4; i++)
     {
         rvector.push_back(rand() % 15);
     }
